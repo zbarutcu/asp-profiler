@@ -25,14 +25,14 @@ ASP Profiler is free software; you can redistribute it and/or modify it under th
 
 For the complete text of the license see the file LICENSE.
 
-You can access the source code and this documentation at [http://sourceforge.net/projects/aspprofiler/](http://sourceforge.net/projects/aspprofiler/).
+You can access the source code and this documentation at [https://github.com/zbarutcu/asp-profiler](https://github.com/zbarutcu/asp-profiler).
 
 <a name="Installing"></a>
 
 Installing ASP Profiler
 -----------------------
 
-The program itself consists of a single ASP file **aspprofiler.asp**, so there is no binary distribution or compilation process. Just download the [source file](http://sourceforge.net/projects/aspprofiler/) and put it under your web server. **WARNING: If you put ASP Profiler where it can be accessed by outside visitors, other people can see your ASP source code, which may contain database passwords or other sensitive information.** It is recommended that you put ASP Profiler under a password-protected part of your site, or a development server that is not accessible by outsiders.
+The program itself consists of a single ASP file **aspprofiler.asp**, so there is no binary distribution or compilation process. You only need to download the [source file](https://github.com/zbarutcu/asp-profiler/raw/master/aspprofiler.asp) and put it under your web server. **WARNING: If you put ASP Profiler where it can be accessed by outside visitors, other people can see your ASP source code, which may contain database passwords or other sensitive information.** It is recommended that you put ASP Profiler under a password-protected part of your site, or a development server that is not accessible by outsiders.
 
 <a name="Usage"></a>
 
@@ -41,15 +41,15 @@ Profiling an ASP Page
 
 ASP Profiler must be accessible by URL in the same domain as the pages you want to profile. For example, if you want to see how `http://your.site.com/your/page.asp` runs, you need to place ASP Profiler somewhere under `http://your.site.com/`, such as `http://your.site.com/aspprofiler.asp`.
 
-Call the ASP Profiler URL `http://your.site.com/aspprofiler.asp` from within Internet Explorer, and in the text box, type in the web path of the page you want to profile, such as `/your/page.asp` and click the **Create Intermediate File** button (if your page uses URL parameters (like `page.asp?etc=etc`), do **NOT** enter them here.) If you get an error, see the next paragraph. Otherwise, your profile code should be generated as an intermediate file, like `http://your.site.com/your/page.profile.asp`.
+Call the ASP Profiler URL `http://your.site.com/aspprofiler.asp` from within Internet Explorer, and in the text box, type in the web path of the page you want to profile, such as `/your/page.asp` and click the **Create Intermediate File** button (if your page uses URL parameters like `page.asp?etc=etc`, do **NOT** enter them here.) If you get an error, see the next paragraph. Otherwise, your profile code should be generated as an intermediate file, like `http://your.site.com/your/page.profile.asp`.
 
-After clicking **Create Intermediate File** if you get an ASP error instead, you probably don't have Write access enabled from within ASP files on your server. If you can't or don't want to enable it, just go back and click the second button "View Intermediate Source" instead, copy the displayed source, paste it into a new file and upload it yourself with the name shown.
+After clicking **Create Intermediate File** if you get an ASP error instead, you probably don't have Write access enabled from within ASP files on your server. If you can't or don't want to enable it, you can go back and click the second button "View Intermediate Source" instead, copy the displayed source, paste it into a new file and upload it yourself with the name shown.
 
 It is now time to enter your URL parameters, if any, in the box after the "?" and click the **Run** button.
 
 You can watch the profiling progress in the status bar. After successful completion, you will see the results by lines of source. The column _Count_ shows how many times that line was executed, and _Time_ shows how much total time was spent on that line. _Percent_ shows _Time_ as a percentage of the total page-generation time. The column headers can be clicked to sort the table by those values, so you can see which lines cause performance bottlenecks, or sorting by line number, you can see a trace of which lines were executed, which blocks were entered, how many times a loop was executed, and so on. Lines that were executed at least once are shown in gray.
 
-To repeat the profiling run, just click **Run** again. You can specify different URL parameters in the **URL** box each time, and profile different parts of your code for code coverage testing.
+To repeat the profiling run, click **Run** again. You can specify different URL parameters in the **URL** box each time, and profile different parts of your code for code coverage testing.
 
 If you update your page source, you will need to refresh the page to create the profiling file (e.g. `/your/page.profile.asp`) again. Alternatively, you can call up the main profiler page, enter path and click **Profile** again like you did the first time.
 
