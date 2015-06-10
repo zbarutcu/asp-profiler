@@ -89,4 +89,4 @@ You may send comments, suggestions and bug reports to [Zafer Barutcuoglu](mailto
 
 * * *
 
-Copyright © 2001-2013 Zafer Barutcuoglu. All Rights Reserved.
+Copyright © 2001-2015 Zafer Barutcuoglu. All Rights Reserved.
