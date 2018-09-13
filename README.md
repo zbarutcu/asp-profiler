@@ -82,6 +82,14 @@ ASP Profiler calls the profiling file using **MSXML.XMLHTTP** from the client-si
 
 <a name="Contact"></a>
 
+2018 UPDATE - VBScript Depricated
+---------------
+VBScript was depricated as a client side scripting language by Microsoft meaning this script will no longer work in IE or Edge, even in compatibility mode. To run this script you'll need to be running in IE 8 or older. This simplest way to acheive this is to download a virtual machine:
+
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+
+The script was successfully run in a Windows 7 (IE 8) VM. 
+
 Contact Info
 ------------
 
