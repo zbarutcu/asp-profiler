@@ -19,7 +19,14 @@ Introduction
 
 ASP Profiler is a line-level performance profiler for ASP (with VBScript) code. It shows how your ASP page runs, which lines are executed how many times, and how many milliseconds each take. Especially for heavy data-driven pages, you can see exactly which lines slow down the page, and optimize where necessary.
 
-This program is itself written purely in ASP and VBScript, for use with Internet Explorer 5.0 and above. It was most recently tested under Windows XP Pro SP3 with IIS Express 1.11, and Windows Server 2012 with IIS 8.
+This program is itself written purely in ASP and VBScript, for use with Internet Explorer 5.0 and above. It was most recently tested under Windows XP Pro SP3 with IIS Express 1.11, Windows Server 2012 with IIS 8, and Windows 7 (IE 8).
+
+> **2018 Update:** VBScript has been deprecated as a client-side scripting language by Microsoft, meaning ASP Profiler will no longer work on modern versions of Internet Explorer or Microsoft Edge, even in compatibility mode. You can still run ASP Profiler by downloading a free virtual machine for older versions from Microsoft:
+>
+> https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+>
+> ASP Profiler was successfully run on the "IE8 on Win7 (x86)" virtual machine.
+
 
 ASP Profiler is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License,or (at your option) any later version.
 
@@ -82,14 +89,6 @@ ASP Profiler calls the profiling file using **MSXML.XMLHTTP** from the client-si
 
 <a name="Contact"></a>
 
-2018 UPDATE - VBScript Depricated
----------------
-VBScript was depricated as a client side scripting language by Microsoft meaning this script will no longer work in IE or Edge, even in compatibility mode. To run this script you'll need to be running in IE 8 or older. This simplest way to acheive this is to download a virtual machine:
-
-https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
-
-The script was successfully run in a Windows 7 (IE 8) VM. 
-
 Contact Info
 ------------
 
@@ -97,4 +96,4 @@ You may send comments, suggestions and bug reports to [Zafer Barutcuoglu](mailto
 
 * * *
 
-Copyright © 2001-2015 Zafer Barutcuoglu. All Rights Reserved.
+Copyright © 2001-2018 Zafer Barutcuoglu. All Rights Reserved.
